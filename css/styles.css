@@ -20,6 +20,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -336,7 +337,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -404,3 +405,168 @@ main{
     background-position:center ;
     background-repeat: no-repeat;
 }
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bitcoin-img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    text-align: center;
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+
+.plans--title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container-slider{
+    display: flex;
+   
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container-card{
+    position: relative; /*para efecto flotante del hijo p*/
+    scroll-snap-align: center; /*Necesario para el scroll*/
+    /*Aplicable para Ecommerce*/
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recomended{
+    position: absolute; /*el padre ya tiene relative*/
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px;
+    padding-top: 8px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.plan-card-title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card-price{
+   
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 5.3rem;
+    color: black;
+    letter-spacing: -4px;
+    
+}
+
+.plan-card-price span{
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+    margin-right: 5px;
+    letter-spacing: initial;
+}
+
+.plan-card-saving {
+    color: #757575 ;
+    font-size: 1.2rem;
+    
+}
+
+.plan-card-cta{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card-cta span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+
+.basic{
+    background-color: var(--secondary-blue);
+}
+
+.ilimitated{
+    background-color: var(--grey);
+    color: black;
+}
+
+.ilimitated-container-card{
+    background-color: var(--warm-black);
+}
+
+.ilimitated-text{
+    color: var(--off-white);
+}
+
