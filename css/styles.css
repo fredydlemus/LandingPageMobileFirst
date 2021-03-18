@@ -592,6 +592,7 @@ footer .left ul{
     font-weight: 500px;
     line-height: 1.8rem;
     list-style: none;
+    padding-left: 10px;
 }
 
 .left li{
