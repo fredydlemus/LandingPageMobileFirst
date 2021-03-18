@@ -276,9 +276,6 @@ main{
 
 }
 
-.main--comition-table{
-    margin-top: 15px;
-}
 
 .comition-table--date{
     width: 190px;
@@ -535,6 +532,20 @@ main{
     width: 150px;
     height: 48px;
     margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card-cta-ilimitated{
+    width: 150px;
+    height: 48px;
+    margin-top: 5px;
     background-color: #FAF8F7;
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
